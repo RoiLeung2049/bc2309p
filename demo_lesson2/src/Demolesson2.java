@@ -27,14 +27,13 @@ public class Demolesson2 {
   // Test boolean 
     boolean B1 = true ; 
     
-    System.out.println( B1);
+    System.out.println(B1);
     // Test && and || 
     boolean B2 = false ; 
-    System.out.println( B1 && B2); // expected to be false 
+    System.out.println(B1 && B2); // expected to be false 
     System.out.println(B1 || B2); // expected to be true 
 
     System.out.println((B1||B2)&& (B1)); // expected to be true 
-
 
 
     // test Operator 
