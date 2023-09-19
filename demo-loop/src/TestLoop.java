@@ -39,5 +39,15 @@ public class TestLoop {
     }
 
     //System.out.println(x);
+
+    // overflow 
+
+    for ( byte b = 0 ; b >= 0 ; b++){
+        System.out.println(b); // it will stop after 127 
+        // when b = 127 -> b++ = -128 -> -1128 < 0 -> escape from the for loop .    
+
   }
+
+
+ }
 }

@@ -35,8 +35,38 @@ public class App {
             // Wrapper class -> null value  
             Integer I15 = null;  // I15 is a null pointer .
 
-            Integer t ; 
-            System.out.println(t);
+            Integer i16  = 8 ; // in memory ,  new Integer (8) ;  new an object in the heap . 
+            Integer i17 = new Integer(8); // 38 and 39 are the same . 
+
+            System.out.println(i16.equals(i17));
+            System.out.println(i16 ==8); // comparing Integer and int , Integer will be temp unbox for comparing with 8 
+            // String method 
+            System.out.println(i16.compareTo(8)); //return 0 ; 
+            System.out.println(i16.compareTo(9)); //return -1; 
+
+
+
+            /// 
+            //review of primitive data type 
+            byte ss1 = 3 ;
+            
+            short sss1 = 13; 
+            sss1 = ss1; // upcast the byte into shoer 
+
+            int sss2 =3; 
+            sss2 = ss1 ;
+
+            float f1 = 13.0f ; // 13.0 is a double  double can't be assign to float so need casting 
+            double d1 = f1; 
+            double d2 = 4; 
+
+            int w = 123 ; //  a variable  w has a reference of an integer obj which it is pointing to the  integer obj has value 5 in heap , variable is stay at stack . 
+
+            int ttt1 = 67 ; 
+            short ss2 = (short) ttt1 ;
+            d1 = ss2 ; 
+            
+
 
 
     }

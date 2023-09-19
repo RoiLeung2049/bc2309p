@@ -11,13 +11,18 @@ public class DemoArray {
     array = new int[3] ;  // initialization 
 
     int[] arr = new int[3];  // 0 , 1, 2 is the index of the array 
+    System.out.println(arr.length) ;
+
+    int t = 3 ; 
+    System.out.println(" //// " +(1/3));  // = 1 , remove the 0.5 
     //assign value to array 
     arr[0] = 100 ; 
     arr[1] = 105;
     arr[2] = 108 ; 
     // arr[3] =110 ; // run-time error 
+    
 
-
+    int[] arrr1 = new int[] { 0,1,2,3,4} ; 
 
     arr[1] = 106; // array's value can be reassign afterward 
     System.out.println(arr[0]);
@@ -71,7 +76,7 @@ public class DemoArray {
     // if we "new" the arr5 again , they are different arr5 ( i.e. they are of different memory). 
     arr5 = new int[] { 5,1,2,3,4} ; 
 
-    System.out.println("before : index 1 :" + arr5[1] + " index 3 :"+ arr5[3] );
+  //  System.out.println("before : index 1 :" + arr5[1] + " index 3 :"+ arr5[3] );
     /// to swap  index 1 and 3 's element
     
     int tmp = 0 ; 
@@ -83,9 +88,9 @@ public class DemoArray {
 
       }
     }
-    System.out.println("after : index 1 :"+ arr5[1] + " index 3 :"+ arr5[3]);
+   // System.out.println("after : index 1 :"+ arr5[1] + " index 3 :"+ arr5[3]);
     // if you when to pritn all element in arr  Arrays.toString()
-    System.out.println(Arrays.toString(arr5));
+    //System.out.println(Arrays.toString(arr5));
 
     //arr5 : Swap min and max values
     // 1st find the min of the array 
@@ -156,7 +161,7 @@ public class DemoArray {
         maxLoc  = i ;  
 
       }
-    System.out.println("max index is :"+ maxLoc);
+  //  System.out.println("max index is :"+ maxLoc);
     
     }
     
@@ -171,7 +176,7 @@ public class DemoArray {
 
     }
     // print
-    System.out.println("the result is :"+ Arrays.toString(arr6));
+  //  System.out.println("the result is :"+ Arrays.toString(arr6));
 
 
     // reverse the string 
@@ -182,7 +187,7 @@ public class DemoArray {
     int loc = 0 ; 
     // swap by for  loop;
     //System.out.println("lengtht "+ charac.length);
-    System.out.println(" before :" + Arrays.toString(charac));
+   // System.out.println(" before :" + Arrays.toString(charac));
     for ( int i = 0 ; i < charac.length/2 ; i++){
       ctmp = charac[i];
       charac[i] = charac[ charac.length-1-i]; 
@@ -191,8 +196,8 @@ public class DemoArray {
     }
     // convert back to a String 
     String.valueOf(charac) ;
-    System.out.println("rrrr " +String.valueOf(charac));
-    System.out.println("After :"+ Arrays.toString(charac));
+  //  System.out.println("rrrr " +String.valueOf(charac));
+   // System.out.println("After :"+ Arrays.toString(charac));
 
 
   }
