@@ -37,5 +37,30 @@ public class TestString {
    short b2 = 32000 ; // Java convert int 320000 to short  32000 to  b2 
                        
    
+
+   // test String method ; 
+// try to make a String array 
+   String[] testS = new String[1];
+   testS[0] = "Green";
+   //testS[1] = "Red" ;
+   int[] Aarray = new int[26];
+   for (String d : testS){
+    // try to turn the String into Char Array 
+      for ( char e :d.toLowerCase().toCharArray()) {
+          Aarray[(e+0)-97]++ ;
+
+      }
+      //for looping the array 
+
+   }
+         for (int w : Aarray){
+        System.out.println(w);
+      }
+
+     
+      String Test = "hello";
+      String Test2 = Test.replace("h"," ");
+      System.out.println(Test2.indexOf('l'));
+      // get the 
 }
 }

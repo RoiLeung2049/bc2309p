@@ -66,5 +66,12 @@ public class DataType {
      double  ii = 13 ;
      ii = ii /4 ; 
      System.out.println(ii);
+
+
+    byte value =127;
+    for (int i = 0 ; i<10; i++){
+      value ++ ;
+      System.out.println("Value:" + value);
+    }
   }
 }
