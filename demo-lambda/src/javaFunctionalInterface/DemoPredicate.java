@@ -39,6 +39,13 @@ public class DemoPredicate {
 
 //Approah 3 
    BiFunction<Integer,Integer,String> concat =  (Integer z, Integer y) ->  String.valueOf(z).concat(String.valueOf(y)); 
+
+    //test 
+    BiFunction<Integer,Integer ,String> concat2 = (a ,c) -> {
+
+      return String.valueOf(a).concat(String.valueOf(c)) ;  
+    };
+
 // implmentation of apply(x,y) ;  i , i -> s
 System.out.println("Test BiFunction  with concat : " +  concat.apply(10 , 20 )); // 1020 ;   
   // test Strign convet
@@ -54,6 +61,12 @@ Consumer<List<Student>> printAllStudents = (input) ->  {
 };
 
 printAllStudents.accept(new ArrayList<>(List.of(new Student(2,"John"),new Student(3,"Peter"),new Student(1,"Choi"))));
+
+
+Consumer<Student> ss = (s) -> testF(s) ; 
+
+ss.accept(new Student(6,"gg")) ; 
+
   }
 
 // Function 
@@ -61,6 +74,9 @@ public static String convert(Integer x , Integer y){
   return String.valueOf(x).concat(String.valueOf(y));
 }
 
-
+// define a function for consumer to use 
+public static void testF(Student st){
+  System.out.println("the test consumer fxn is done : " + st.getName()) ; 
+}
 
 }

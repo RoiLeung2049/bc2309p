@@ -1,0 +1,32 @@
+{
+
+  "name" : "John Lau",
+  "age" : 40 ,
+  "weight" : 80.5 ,
+  "isChild" : false 
+
+
+}
+
+
+[
+  {
+
+    "name" : "John Lau",
+    "age" : 40 ,
+    "weight" : 80.5 ,
+    "isChild" : false 
+  
+  
+  },
+  {
+
+    "name" : "Sally Lau",
+    "age" : 40 ,
+    "weight" : 80.5 ,
+    "isChild" : false 
+  
+  
+  }
+
+]

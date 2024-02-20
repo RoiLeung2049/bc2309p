@@ -14,4 +14,10 @@ public class Person {
     return this.name;
   }
 
+
+  public String gettype(){
+    return "the type is Person." ; 
+  }
+
+
 }

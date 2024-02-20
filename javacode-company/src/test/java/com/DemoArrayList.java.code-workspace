@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../DemoArrayList.java"
+		},
+		{
+			"name": "javacode-company",
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

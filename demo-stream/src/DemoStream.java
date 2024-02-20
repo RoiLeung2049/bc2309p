@@ -21,6 +21,7 @@ public class DemoStream{
 
         List<String> strings =  List.of("Hello" , "World" ,"Bye" , "Bye" ,"ABC"); 
 
+       // List<String> ddd =  List.of("Hello" , "World" ,"Bye" , "Bye" ,"ABC") ; 
         // print all content in strings 
         for( String s : strings){
           if(s.length() <= 3 ){

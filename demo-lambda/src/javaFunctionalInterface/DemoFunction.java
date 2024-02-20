@@ -17,6 +17,9 @@ public class DemoFunction {
       return d.length();
     };
 
+
+    Function<Integer,Integer> dAdd = D -> D + 2 ;  //dAdd is a function object 
+    
     System.out.println(convertFunction.apply("Hello World"));
 
 
