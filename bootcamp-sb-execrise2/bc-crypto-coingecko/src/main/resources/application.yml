@@ -1,0 +1,30 @@
+#String url = "https://api.coingecko.com"
+     # //https://api.coingecko.com/api/v3/coins/markets?x_cg_demo_api_key=
+    
+api:
+  coingecko:
+    domain: "api.coingecko.com"
+    endpoints: "/api/v3/coins/markets?x_cg_demo_api_key="
+    api_key: "CG-PBxD9FeV3smxWJKNC96JTDtU"
+
+
+
+database:
+  postgres: "coin_gecko_DB"
+
+
+spring.datasource:
+  url: "jdbc:postgresql://localhost:5432/${database.postgres}"
+  username: "postgres"
+  password: "1234"
+  # connected to Database -db_2309p 
+
+  driverClassName: "org.postgresql.Driver"
+
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: create
+
+spring.sql:
+  init.mode: always
